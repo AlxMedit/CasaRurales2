@@ -58,7 +58,7 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 18px;
     /*nuevo*/
 }
 
@@ -82,6 +82,12 @@ nav>ul>li>a:hover {
     width: 90%;
     max-width: 90%;
     min-width: 90%;
+}
+
+.anuncioTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .busqueda label,
@@ -156,14 +162,6 @@ nav>ul>li>a:hover {
     /*nuevo*/
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .contenido>h3>a:hover {
     text-decoration: underline;
     /*nuevo*/
@@ -188,9 +186,12 @@ nav>ul>li>a:hover {
 .contenido>p,
 .contenido>button {
     font-size: 13px;
+    margin-top: 5px;
 }
 
-/** */
+.Location>a:hover {
+    color: darkred;
+}
 
 footer {
     background-color: #333;
@@ -236,29 +237,55 @@ footer {
     height: 125px;
     width: auto;
     margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .anuncio {
     display: flex;
     padding: 10px;
+    gap: 20px;
 }
 
 .anuncio:hover {
-    background-color: #ffebdb;
+    background-color: rgba(158, 158, 158, 0.151);
+    border-radius: 30px;
+    box-shadow: 1px 0 10px rgba(158, 158, 158, 0.151);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.boton-contenedor {
+    margin-left: auto;
+    display: flex;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    /* Centra el botón verticalmente */
+    height: 50%;
+    /* Establece la altura del contenedor al 40% del contenedor padre */
 }
 
 .disponibilidad {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: 10px;
+    padding: 20%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ffa962;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -270,7 +297,13 @@ footer {
         display: flex;
         justify-content: center;
         margin-top: 20px;
-        gap: 20px;/*nuevo*/
+        gap: 20px;
+        /*nuevo*/
+    }
+
+    .anuncioTitle {
+        display: flex;
+        flex-direction: row;
     }
 
     .recientes {
@@ -288,8 +321,10 @@ footer {
         margin: 0px;
     }
 
-    .contenido p {
+    .contenido>p,
+    .contenido>button {
         font-size: 13px;
+        margin-top: 20px;
     }
 
     .busqueda {
@@ -335,6 +370,11 @@ footer {
         font-size: 15px;
     }
 
+    .boton-contenedor {
+        margin-right: 10%;
+
+    }
+
 }
 
 
@@ -342,9 +382,15 @@ footer {
 
 @media only screen and (min-width: 1280px) {
 
+    .boton-contenedor {
+        margin-right: 20%;
+
+    }
+
     .contenido>p,
     .contenido>button {
         font-size: 18px;
+        margin-top: 30px;
     }
 
     .contenido h3 {
@@ -404,8 +450,10 @@ footer {
     }
 
     .disponibilidad:hover {
-        background-color: #ffc799;
-        color: darkred;
+        font-weight: bold;
+        box-shadow: 1px 0 10px rgba(0, 0, 0, 0.463);
+        font-size: 22px;
+        transition: all 0.2s ease;
     }
 
 }
