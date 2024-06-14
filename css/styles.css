@@ -123,6 +123,28 @@ nav>ul>li>a:hover {
     background-color: #ffc799;
 }
 
+/** Recientes */
+.recientes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.mostrarReciente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mostrarReciente img{
+    width: 150px;
+    height: auto;
+}
+
+
+
 footer {
     background-color: #333;
     color: #fff;
