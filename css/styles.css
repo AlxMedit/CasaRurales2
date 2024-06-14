@@ -53,6 +53,10 @@ h2 {
     font-size: 35px;
 }
 
+h3 {
+    font-size: 25px; /*nuevo*/
+}
+
 nav>ul>li>a:hover {
     color: darkred;
 }
@@ -136,14 +140,19 @@ nav>ul>li>a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 30px;  /*nuevo*/
 }
 
 .mostrarReciente img{
     width: 150px;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 0 10px  rgba(0, 0, 0, 0.463); /*nuevo*/
 }
 
-
+.contenido>h3:hover{
+   text-decoration: underline; /*nuevo*/
+}
 
 footer {
     background-color: #333;
