@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/a75f20e739.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="logo">
+                    <span class="nav-item">Alquiling®</span>
+                </a>
+            </li>
+            <li><a href="#">
+                    <i class="fas fa-search"></i>
+                    <span class="nav-item">Búsqueda</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fas fa-map-signs"></i>
+                    <span class="nav-item">Anunciate</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="fas fa-info"></i>
+                    <span class="nav-item">Ayuda y asistencia</span>
+                </a></li>
+            <li><a href="#" class="logout">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-item">Log out</span>
+                </a></li>
+
+        </ul>
+    </nav>
+
+    <div class="superior"></div>
+    <form action="" method="post" class="busqueda">
+        <h2>Búsqueda</h2>
+        <label for="destino">Destino:</label>
+        <input type="text" id="destino" name="destino" required>
+
+        <div class="fecha-entrada-salida">
+            <div>
+                <label for="fechas">Fecha entrada:</label>
+                <input type="date" id="fechas" name="fechas" required>
+            </div>
+            <div>
+                <label for="fechas">Fecha salida:</label>
+                <input type="date" id="fechas" name="fechas" required>
+            </div>
+        </div>
+
+        <div class="cantidad-personas">
+            <div>
+                <label for="cantidad_adultos">Adultos:</label>
+                <input type="number" id="cantidad_adultos" name="cantidad_adultos" min="1" required>
+            </div>
+
+            <div>
+                <label for="cantidad_niños">Niños:</label>
+                <input type="number" id="cantidad_niños" name="cantidad_niños" min="0" required>
+            </div>
+        </div>
+
+        <div class="margen-precios">
+            <div>
+                <label for="precio_minimo">Precio Mínimo:</label>
+                <input type="number" id="precio_minimo" name="precio_minimo" min="0" required>
+            </div>
+            <div>
+                <label for="precio_maximo">Precio Máximo:</label>
+                <input type="number" id="precio_maximo" name="precio_maximo" min="0" required>
+            </div>
+        </div>
+
+        <button type="submit">Buscar</button>
+    </form>
+
+    <main class="todo">
+        <h3>Búsquedas recientes</h3>
+        <section class="recientes">
+            <article class="mostrarReciente">
+                <img src="images/reciente.jpeg" alt="">
+                <div class="contenido">
+                    <h3><a href="#">Viñuela</a></h3>
+                    <p>2 personas, 6Feb - 8Feb</p>
+                </div>
+            </article>
+            
+            <article class="mostrarReciente">
+                <img src="images/reciente.jpeg" alt="">
+                <div class="contenido">
+                    <h3><a href="#">Casoplón</a></h3>
+                    <p>2 personas, 6Feb - 8Feb</p>
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+        <h3>Anuncios</h3>
+        <section class="anuncios">
+            <a href="#">
+                <article class="anuncio">
+                    <img src="images/anuncio1.jpg" alt="">
+                    <div class="contenido">
+                        <h3 class="anuncioTitle">Casa Manolete - 250€/Noche</h2>
+                            <p>Viñuela, Málaga</p>
+                            <div>
+                                <label for="rating">Calificación:</label>
+                                <select id="rating">
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <button class="disponibilidad">Ver Disponibilidad</button>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article class="anuncio">
+                    <img src="images/anuncio2.jpg" alt="">
+                    <div class="contenido">
+                        <h3 class="anuncioTitle">Casa Antoñete - 150€/Noche</h2>
+                            <p>Viñuela, Málaga</p>
+                            <div class="rating">
+                                <label for="rating">Calificación:</label>
+                                <select id="rating">
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <button class="disponibilidad">Ver Disponibilidad</button>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article class="anuncio">
+                    <img src="images/anuncio3.jpg" alt="">
+                    <div class="contenido">
+                        <h3 class="anuncioTitle">Casa Joselu - 700€/Noche</h2>
+                            <p>Viñuela, Málaga</p>
+                            <div class="rating">
+                                <label for="rating">Calificación:</label>
+                                <select id="rating">
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <button class="disponibilidad">Ver Disponibilidad</button>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article class="anuncio">
+                    <img src="images/anuncio4.jpg" alt="">
+                    <div class="contenido">
+                        <h3 class="anuncioTitle">Caserío Borja - 500€/Noche</h2>
+                            <p>Viñuela, Málaga</p>
+                            <div class="rating">
+                                <label for="rating">Calificación:</label>
+                                <select id="rating">
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <button class="disponibilidad">Ver Disponibilidad</button>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article class="anuncio">
+                    <img src="images/anuncio5.jpg" alt="">
+                    <div class="contenido">
+                        <h3 class="anuncioTitle">Casa Mal Estado - 10€/Noche</h2>
+                            <p>Viñuela, Málaga</p>
+                            <div class="rating">
+                                <label for="rating">Calificación:</label>
+                                <select id="rating">
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <button class="disponibilidad">Ver Disponibilidad</button>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article class="anuncio">
+                    <img src="images/anuncio6.jpg" alt="">
+                    <div class="contenido">
+                        <h3 class="anuncioTitle">Casa Victor - 250€/Noche</h2>
+                            <p>Viñuela, Málaga</p>
+                            <div class="rating">
+                                <label for="rating">Calificación:</label>
+                                <select id="rating">
+                                    <option value="1">1 estrella</option>
+                                    <option value="2">2 estrellas</option>
+                                    <option value="3">3 estrellas</option>
+                                    <option value="4">4 estrellas</option>
+                                    <option value="5">5 estrellas</option>
+                                </select>
+                            </div>
+
+                            <button class="disponibilidad">Ver Disponibilidad</button>
+                    </div>
+                </article>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        Alquiling 2024® - Alejandro V Abad - 2024
+    </footer>
+
+</body>
+
+</html>

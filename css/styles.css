@@ -1,0 +1,306 @@
+* {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin-top: 100px;
+}
+
+nav>ul>li>a>img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav>ul>li>a>span {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+nav>ul>li>a:hover {
+    color: darkred;
+}
+
+/** Arreglo del formulario */
+.busqueda {
+    padding: 0px 0px 30px 0px;
+    height: auto;
+    margin: auto;
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 90%;
+    min-width: 90%;
+}
+
+.busqueda label,
+.busqueda div label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.busqueda input,
+.busqueda div div input,
+.busqueda button {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+
+}
+
+.busqueda .fecha-entrada-salida,
+.busqueda .cantidad-personas,
+.busqueda .margen-precios {
+    display: block;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.busqueda>.cantidad-personas input {
+    width: 50%;
+}
+
+.busqueda button {
+    margin: auto;
+    width: 50%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffebdb;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.busqueda button:hover {
+    background-color: #ffc799;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.superior {
+    width: 100%;
+    height: 300px;
+    background-color: #ffebdb;
+    margin-top: -100px;
+}
+
+.todo {
+    margin-top: 20px;
+}
+
+.todo {
+    width: 85%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.recientes>a>article {
+    display: flex;
+    width: 22%;
+    gap: 10px;
+}
+
+.recientes>a>article:hover {
+    background-color: #ffebdb;
+}
+
+.recientes>a>article>img {
+    height: 100px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.anuncio>img {
+    height: 125px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.anuncio {
+    display: flex;
+    padding: 10px;
+}
+
+.anuncio:hover {
+    background-color: #ffebdb;
+}
+
+.disponibilidad {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* RES TABLET  */
+@media only screen and (min-width: 900px) {
+    .busqueda {
+        min-width: 90%;
+        max-width: 50%;
+        padding: 0px 0px 30px 0px;
+        height: auto;
+        margin: auto;
+        margin-top: -150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .busqueda .fecha-entrada-salida,
+    .busqueda .cantidad-personas,
+    .busqueda .margen-precios {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    nav>ul>li>a>span {
+        display: block;
+    }
+
+    nav>ul>li>a>img {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .logo>span {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    .disponibilidad {
+        font-size: 15px;
+    }
+
+}
+
+
+/* RES PC  */
+
+@media only screen and (min-width: 1280px) {
+    .busqueda {
+        min-width: 50%;
+    }
+
+    nav>ul>li>a>span {
+        display: inline;
+        margin-left: 10px;
+    }
+
+    nav a {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .todo>h3 {
+        font-size: 30px;
+    }
+
+    .anuncio {
+        font-size: 20px;
+    }
+
+    .anuncio>img {
+        height: 250px;
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .superior {
+        width: 100%;
+        height: 300px;
+        background-color: #ffebdb;
+        margin-top: -100px;
+    }
+
+    .anuncioTitle {
+        font-size: 30px;
+    }
+
+    .contenido>p {
+        margin-top: -10px;
+    }
+
+    .rating {
+        display: flex;
+        gap: 10px;
+    }
+
+    .disponibilidad {
+        font-size: 20px;
+    }
+
+    .disponibilidad:hover {
+        background-color: #ffc799;
+        color: darkred;
+    }
+
+}

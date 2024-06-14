@@ -1,0 +1,100 @@
+* {
+    background-color: #ffebdb;
+    animation: changeColor 5s infinite;
+}
+
+.bienvenida {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: darkred;
+    animation: bounce 2s infinite;
+}
+
+a, button {
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 40px;
+    display: table;
+    width: 300px;
+    text-decoration: none;
+    color: darkred;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover, button:hover {
+    transform: scale(1.1);
+}
+
+
+button {
+    background-color: #ffebdb;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: changeTextColor 10s infinite;
+    /* height 3vh */
+}
+
+@keyframes changeTextColor {
+    0%, 25%, 50%, 75%, 100% {
+        color: #fff;
+    }
+    12.5%, 37.5%, 62.5%, 87.5% {
+        color: lightblue;
+    }
+}
+
+img{
+    margin: 0 auto;
+    margin-top: -30px;
+    display: block;
+}
+
+@media only screen and (min-width: 900px) {
+    .bienvenida {
+        font-size: 100px;
+    }
+
+    a, button {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .bienvenida {
+        font-size: 150px;
+    }
+
+    a, button {
+        font-size: 80px;
+    }
+
+    img {
+        height: 375px;
+        width: auto;
+        margin-top: -50px;
+    }
+}
